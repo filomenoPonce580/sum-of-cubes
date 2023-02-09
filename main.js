@@ -1,12 +1,11 @@
 function sumCubes(n){
-  //create empty array
-  let cubes = [];
+  //create return value at 0
+  let cubes = 0;
   
-  //for loop that runs through each number and pushes value into array
+  //for loop that runs through each number and adds value into cubes
   for(let i = 1; i <= n; i++){
-    cubes.push(i*i*i)
+    cubes += i**3
   }
   
-  //reduce cubes(addition) and return
-  return cubes.reduce((a,c) => a+c, 0)
-}
+  //return cubes
+  return cubes
